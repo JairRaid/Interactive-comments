@@ -32,7 +32,7 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL:
+- Solution URL: https://github.com/JairRaid/Interactive-comments
 - Live Site URL:
 
 ## My process
