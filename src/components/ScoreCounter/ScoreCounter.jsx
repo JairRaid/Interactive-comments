@@ -3,7 +3,7 @@ import "./ScoreCounter.css";
 import { CommentContext } from "../../context/CommentContext";
 import { ACTIONS } from "../../data/commentData";
 
-const ScoreCounter = ({ score, commentId, commentType }) => {
+const ScoreCounter = ({ score, commentId, commentType, userName }) => {
   const { dispatch, votes, setVotes } = useContext(CommentContext);
 
   const postVote = votes.find(
@@ -67,7 +67,7 @@ const ScoreCounter = ({ score, commentId, commentType }) => {
     <div
       className="score-counter"
       role="group"
-      aria-label="Vote on amyrobson's comment"
+      aria-label={`Vote on ${userName}'s comment`}
     >
       <button
         type="button"

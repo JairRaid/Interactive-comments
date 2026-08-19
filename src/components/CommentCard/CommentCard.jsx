@@ -138,6 +138,7 @@ const CommentCard = ({
           <ScoreCounter
             score={score}
             commentId={id}
+            userName={username}
             commentType={commentType}
           />
 
@@ -145,7 +146,7 @@ const CommentCard = ({
             <button
               type="button"
               className="btn-action btn-reply"
-              aria-label="Reply to amyrobson"
+              aria-label={`Reply to ${username}`}
               onClick={handleReply}
             >
               <svg width="14" height="13" xmlns="http://www.w3.org/2000/svg">

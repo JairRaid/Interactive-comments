@@ -32,6 +32,8 @@ const DeleteModal = () => {
     <motion.div
       key={commentId + "d"}
       className={`modal-overlay ${isModalVisible ? "" : "invisible"}`}
+      role="dialog"
+      aria-modal="true"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
