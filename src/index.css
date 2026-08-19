@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-white: hsl(0 100% 100%);
+  --color-black: hsl(0 0% 0%);
+  --color-grey-800: hsl(212 24% 26%);
+  --color-grey-500: hsl(211 10% 45%);
+  --color-grey-100: hsl(223 19% 93%);
+  --color-grey-50: hsl(228 33% 97%);
+  --color-purple-600: hsl(238 40% 52%);
+  --color-purple-200: hsl(239 57% 85%);
+  --color-pink-400: hsl(358 79% 66%);
+  --color-pink-200: hsl(357 100% 86%);
+
+  /* Typography */
+  --font-rubik:
+    "Rubik", system-ui, -apple-system, "Segoe UI", BlinkMacSystemFont;
+
+  --text-24: 1.5rem;
+  --text-16: 1rem;
+  --text-13: 0.8125rem;
+
+  --leading-120: 1.2;
+  --leading-150: 1.5;
+
+  --spacing-8: 0.5rem;
+  --spacing-16: 1rem;
+  --spacing-20: 1.25rem;
+  --spacing-24: 1.5rem;
+  --spacing-26: 1.625rem;
+  --spacing-32: 2rem;
+  --spacing-40: 2.5rem;
+
+  /* Radius */
+  --radius-10: 0.625rem;
+  --radius-8: 0.5rem;
+  --radius-2: 0.125rem;
+
+  /* Breakpoint */
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+}
+
+body {
+  @apply font-rubik bg-grey-50;
+}
+button {
+  @apply cursor-pointer;
+}
+textarea {
+  @apply text-grey-500 border border-grey-100 rounded-8 my-transition
+  w-full px-16 py-8;
+}
+textarea:focus {
+  @apply border-purple-600 outline-none caret-purple-600;
+}
+
+@utility my-transition {
+  @apply transition-all duration-200;
+}

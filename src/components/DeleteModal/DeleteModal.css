@@ -1,0 +1,32 @@
+@reference "../../index.css";
+
+.modal-overlay {
+  @apply fixed top-0 left-0 z-20
+  flex justify-center items-center
+  min-h-dvh w-full px-16 bg-black/40;
+
+  .modal-card {
+    @apply bg-white rounded-8
+    flex flex-col gap-y-16
+    max-w-[21.875rem] px-26 py-20;
+  }
+  .modal-title {
+    @apply font-medium text-24 leading-120 text-grey-800;
+  }
+  .modal-description {
+    @apply text-grey-500;
+  }
+  .modal-actions {
+    @apply flex items-center justify-between gap-x-16;
+  }
+  .btn {
+    @apply font-medium text-white rounded-8
+    w-full h-[3rem];
+  }
+  .btn-cancel {
+    @apply bg-grey-500;
+  }
+  .btn-delete {
+    @apply bg-pink-400;
+  }
+}

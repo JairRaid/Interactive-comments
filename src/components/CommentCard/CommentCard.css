@@ -1,0 +1,89 @@
+@reference "../../index.css";
+
+.comment-card {
+  @apply bg-white rounded-8
+  flex flex-col gap-y-16
+  p-16
+  md:p-24 md:flex-row md:items-start md:relative md:gap-x-24;
+
+  .comment-content {
+    @apply flex flex-col gap-y-16
+    relative
+    md:order-1 md:w-full;
+  }
+  .comment-header {
+    @apply flex items-center gap-x-16;
+  }
+  .avatar {
+    @apply max-w-[2rem] h-auto;
+  }
+  .username {
+    @apply font-medium text-grey-800;
+  }
+  .user-badge {
+    @apply font-medium text-13 leading-120 text-white bg-purple-600
+    inline-flex justify-center items-center rounded-2
+    w-[2.25rem] h-[1.1875rem];
+  }
+  .timestamp {
+    @apply text-grey-500;
+  }
+  .comment-body {
+    @apply text-grey-500;
+  }
+  textarea {
+    @apply md:ml-[calc(2.5rem+1rem)] md:mr-[calc(6.5rem+1rem)] md:w-[calc(100%-11rem)]
+    md:relative md:z-[1];
+  }
+  .reply-mention {
+    @apply font-bold text-purple-600;
+  }
+  .comment-footer {
+    @apply flex items-center justify-between;
+  }
+  .btn-action {
+    @apply font-medium flex items-center gap-x-8;
+  }
+  .btn-reply,
+  .btn-edit {
+    @apply text-purple-600 my-transition;
+  }
+  .btn-reply {
+    @apply md:absolute md:top-24 md:right-24;
+  }
+  .user-actions {
+    @apply flex items-center gap-x-16
+    md:absolute md:top-24 md:right-24 md:gap-x-24;
+  }
+  .btn-delete {
+    @apply text-pink-400 my-transition;
+  }
+  .btn-update {
+    @apply font-medium text-white bg-purple-600 rounded-8 my-transition
+    absolute bottom-[-3.5rem] right-0
+    w-[6.5rem] h-[2.5rem]
+    md:mt-8 md:ml-auto md:relative md:bottom-auto md:right-auto md:h-[3rem];
+  }
+  .update-comment {
+    @apply md:w-full md:mx-0;
+  }
+
+  /* Hover state */
+  .btn-reply:hover,
+  .btn-edit:hover {
+    @apply text-purple-200;
+  }
+  .btn-delete:hover {
+    @apply text-red-200;
+  }
+  .btn-update:hover {
+    @apply bg-purple-200;
+  }
+  .btn-reply:hover svg,
+  .btn-edit:hover svg {
+    @apply text-purple-200;
+  }
+  .btn-delete:hover svg {
+    @apply text-red-200;
+  }
+}

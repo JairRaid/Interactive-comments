@@ -1,0 +1,50 @@
+@reference "./index.css";
+
+.comments-wrapper {
+  @apply px-16 py-32
+  md:p-40 md:overflow-x-hidden;
+}
+.comments-list {
+  @apply flex flex-col gap-y-16
+  md:max-w-[45.625rem] md:mx-auto md:gap-y-24;
+}
+.replies-container {
+  @apply ml-0 pl-16 border-l border-grey-100
+  flex flex-col gap-y-16
+  md:ml-40 md:pl-40 md:gap-y-24;
+}
+
+.add-comment-form,
+.reply-comment-form {
+  @apply bg-white rounded-8
+  p-16
+  md:p-24 md:relative;
+
+  .new-comment {
+    @apply md:ml-[calc(2.5rem+1rem)] md:mr-[calc(6.5rem+1rem)] md:w-[calc(100%-11rem)]
+    md:relative md:z-[1];
+  }
+  .form-footer {
+    @apply flex items-center justify-between
+    mt-16
+    md:mt-0 md:absolute md:top-24 md:w-[calc(100%-3rem)];
+  }
+  .btn-submit {
+    @apply font-medium text-white bg-purple-600 rounded-8 my-transition
+    w-[6.5rem] h-[3rem];
+  }
+  .avatar {
+    @apply max-w-32
+    md:max-w-40;
+  }
+
+  /* Hover state */
+  .btn-submit:hover {
+    @apply bg-purple-200;
+  }
+}
+
+.add-comment-form {
+  @apply mt-16
+  md:max-w-[45.625rem] md:mx-auto md:mt-24;
+}

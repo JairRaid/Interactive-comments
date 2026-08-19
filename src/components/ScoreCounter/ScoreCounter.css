@@ -1,0 +1,24 @@
+@reference "../../index.css";
+
+.score-counter {
+  @apply bg-grey-50 rounded-10
+  inline-flex justify-center items-center
+  min-w-[6.25rem] h-[2.5rem]
+  md:flex-col md:min-h-[6.25rem] md:min-w-[2.5rem];
+
+  .btn-score {
+    @apply h-full
+    inline-flex justify-center items-center
+    basis-[calc(100%/3)]
+    md:w-full;
+  }
+  .score-value {
+    @apply basis-[calc(100%/3)] font-medium text-purple-600 text-center
+    md:flex md:items-center;
+  }
+
+  /* Hover state */
+  .btn-score:hover svg {
+    @apply text-purple-600;
+  }
+}
