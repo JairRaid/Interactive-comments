@@ -168,7 +168,6 @@ const commentReducer = (state, action) => {
     }
 
     if (payload.commentType === "reply") {
-      console.log(payload.id + " " + payload.commentSourceId);
       return {
         ...state,
         comments: state.comments.map((comment) => {

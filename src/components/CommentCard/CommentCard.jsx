@@ -199,12 +199,6 @@ const CommentCard = ({
               )}
             </>
           )}
-
-          {/* {edit && (
-            <button className="btn-update" type="button" onClick={handleUpdate}>
-              UPDATE
-            </button>
-          )} */}
         </footer>
       </motion.article>
 
