@@ -18,7 +18,7 @@
   }
 
   /* Hover state */
-  .btn-score:hover svg {
-    @apply text-purple-600;
+  .btn-score svg {
+    @apply hover:text-purple-600;
   }
 }
