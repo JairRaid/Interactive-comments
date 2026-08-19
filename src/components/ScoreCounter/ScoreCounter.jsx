@@ -87,7 +87,7 @@ const ScoreCounter = ({ score, commentId, commentType, userName }) => {
           />
         </svg>
       </button>
-      <span className="score-value" aria-label="Current score: 12">
+      <span className="score-value" aria-label={`Current score: ${score}`}>
         {score}
       </span>
       <button
